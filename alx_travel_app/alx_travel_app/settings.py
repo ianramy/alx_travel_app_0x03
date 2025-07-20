@@ -22,7 +22,7 @@ load_dotenv(os.path.join(BASE_DIR, '.env'))                # Load environment va
 
 # Initialize environment variables
 env = environ.Env()
-environ.Env.read_env(BASE_DIR / '.env')    # This will read the .env file
+environ.Env.read_env(BASE_DIR / '.env')
 
 
 # Quick-start development settings - unsuitable for production
