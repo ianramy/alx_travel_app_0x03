@@ -45,10 +45,10 @@ schema_view = get_schema_view(
 )
 
 urlpatterns = [
-    path('admin/', admin.site.urls),        # Routes to Django admin
-    path('api/', include('listings.urls')), # Routes to listings/urls.py
-    path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),        # Routes to Swagger UI
-    path('redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),                 # Routes to ReDoc UI
+    path('admin/', admin.site.urls),
+    path('api/', include('listings.urls')),
+    path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
+    path('redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
     path('api/payments/initiate/', InitiatePaymentView.as_view(), name='initiate-payment'),
     path('api/payments/verify/', VerifyPaymentView.as_view(), name='verify-payment'),
 ]

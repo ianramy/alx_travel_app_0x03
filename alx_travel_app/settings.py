@@ -92,11 +92,11 @@ WSGI_APPLICATION = 'alx_travel_app.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': env('DB_NAME'),     # The database name
-        'USER': env('DB_USER'),     # The database user
-        'PASSWORD': env('DB_PASSWORD'),     # The database password
-        'HOST': env('DB_HOST', default='localhost'),  # The database host
-        'PORT': env('DB_PORT', default='3306'),  # The database port
+        'NAME': env('DB_NAME'),
+        'USER': env('DB_USER'),
+        'PASSWORD': env('DB_PASSWORD'),
+        'HOST': env('DB_HOST', default='localhost'),
+        'PORT': env('DB_PORT', default='3306'),
     }
 }
 

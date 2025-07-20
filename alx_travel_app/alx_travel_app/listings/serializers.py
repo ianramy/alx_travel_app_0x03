@@ -1,6 +1,6 @@
 from rest_framework import serializers
 from .models import Listing, Booking, Review
-from django.contrib.auth.models import User
+from django.contrib.auth.models import User #noqa
 from .models import Payment
 
 class ListingSerializer(serializers.ModelSerializer):

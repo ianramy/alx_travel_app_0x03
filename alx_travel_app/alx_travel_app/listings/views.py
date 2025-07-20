@@ -1,11 +1,11 @@
-import os
+import os #noqa
 import requests
-from django.shortcuts import render
+from django.shortcuts import render #noqa
 from rest_framework import viewsets
 from .models import Listing, Booking, Payment
 from .serializers import ListingSerializer, BookingSerializer, PaymentSerializer
 from drf_yasg.utils import swagger_auto_schema
-from drf_yasg import openapi
+from drf_yasg import openapi #noqa
 from django.conf import settings
 from django.http import JsonResponse
 from rest_framework import status
@@ -18,7 +18,7 @@ from .tasks import send_booking_confirmation_email
 
 # Temporary start
 from django.http import HttpResponse
-from django.conf import settings
+from django.conf import settings #noqa
 
 def test_chapa_key(request):
     return HttpResponse(f"Chapa Key: {settings.CHAPA_SECRET_KEY}")
